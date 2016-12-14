@@ -1,19 +1,22 @@
-public class State {
+import java.io.Serializable;
 
-	private String state;
+public class State  implements Serializable {
+
+	private String content;
 
 	public State() {
+		content  = "<err>";
 	}
 
 	public State(String ztate) {
-		this.state = ztate;
+		this.content = ztate;
 	}
 
-	public void setContent(String ztate) {
-		this.state = ztate;
+	public String toString() {
+		return content;
 	}
 
 	public String getContent() {
-		return state;
+		return content;
 	}
 }

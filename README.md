@@ -27,9 +27,8 @@ input {“character”:”a”,”amount”:3} adds “aaa” to the state strin
 
 - DELETE /chars/<character> - deletes the last occurrence of the character in
 the state string
-web services requirements:
 
-## Behaviour
+## web services requirements:
 
 - return 400 if the POST request contains invalid JSON
 - character in DELETE has to be a single alphanumeric character, otherwise return 400
@@ -43,6 +42,13 @@ web services requirements:
 - put your solution on GitHub (personal account)
 - write unit tests
 - use a database to store the state
+
+## Notes on this implementation
+- Fairly simple unit testing only.  In order to allow automatic testing with curl, the property setting
+   application.uniqueness=IPaddress allows multiple connections from one machine.  This is in
+   violation of the specification, so should only be used for testing.
+- No database.
+- No validation/sanitisation of input.
 
 ## Installation and running on Gentoo Linux
 - sudo emerge -q1 maven-bin
