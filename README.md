@@ -49,7 +49,7 @@ the state string
    violation of the specification, so should only be used for testing.
 - No database.  A database is crucial for production because it allows the server to be updated without
    loss of state.
-- No validation/sanitisation of input.
+- Only simple validation/sanitisation of input.
 - I could have just followed https://stormpath.com/blog/tutorial-crud-spring-boot-20-minutes but
    only found it when my solution was near complete.
 
