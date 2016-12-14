@@ -1,22 +1,14 @@
-import java.io.Serializable;
+public class State {
 
-public class State  implements Serializable {
-
+	private String hash;
 	private String content;
 
-	public State() {
-		content  = "<err>";
-	}
+	public String getHash () { return hash; }
 
-	public State(String ztate) {
+	public String getContent () { return content; }
+
+	public State(String mash, String ztate) {
+		this.hash = mash;
 		this.content = ztate;
-	}
-
-	public String toString() {
-		return content;
-	}
-
-	public String getContent() {
-		return content;
 	}
 }
