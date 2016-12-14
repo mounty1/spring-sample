@@ -44,8 +44,11 @@ web services requirements:
 - write unit tests
 - use a database to store the state
 
-## Installation on Gentoo Linux
-- sudo -i emerge -q1 maven-bin
+## Installation and running on Gentoo Linux
+- sudo emerge -q1 maven-bin
 - git clone spring-sample
 - cd spring-sample
 - mvn spring-boot:run
+
+then connect from a browser to http://localhost:8080
+
