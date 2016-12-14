@@ -43,3 +43,9 @@ web services requirements:
 - put your solution on GitHub (personal account)
 - write unit tests
 - use a database to store the state
+
+## Installation on Gentoo Linux
+- sudo -i emerge -q1 maven-bin
+- git clone spring-sample
+- cd spring-sample
+- mvn spring-boot:run
